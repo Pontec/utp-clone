@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Helvetica-Bold' ;
+    src: url(/Fonts/Helvetica-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica-Light';
+    src: url(/Fonts/Helvetica-Light.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Helvetica-Light', Helvetica, sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 100vh;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+summary{
+    font-family: 'Helvetica-Bold', sans-serif;
+    font-weight: 400;
+}
+
+ul li{
+    list-style: none;
+}
+
+/*********************MENÚ*********************/
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    margin: 0 40px;
+}
+
+/*MENÚ LINK*/
+.menu .menu__link ul .menu__item{
+    font-size: 16px;
+    display: inline-block;
+    transition: all .2s ease;
+    padding: 10px;
+    position: relative;
+    z-index: 100;
+}
+
+.menu .menu__link ul .menu__blog a,
+.menu .menu__link ul .menu__contact a{
+    border: none !important;
+}
+
+.menu .menu__link ul .menu__contact{
+    background-color: black;
+    border: 0.5rem solid black;
+    margin-left: 30px;
+    padding: 0;
+}
+
+.menu .menu__link ul .menu__contact a:hover{
+    font-size: 18px;
+}
+
+.menu .menu__link ul .menu__contact a{
+    color: #fff !important;
+    font-weight: bold;
+}
+
+
+.menu .menu__link ul .menu__item a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    display: block;
+}
+
+.menu .menu__link ul .menu__item .menu__enlace{
+    padding-right: 15px;
+    border-right: 1px solid #727272
+}
+
+.menu .menu__link ul .menu__item a:hover{
+    font-weight: bold;
+}
+
+.menu .menu__link ul li ul{
+    position: absolute;
+    left: -30px;
+    top: 35px;
+    width: 150px;
+    display: none;
+}
+
+.menu .menu__link ul li ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.menu .menu__link ul li ul li ul{
+    position: absolute;
+    left: -150px;
+    top: 10px;
+}
+
+.menu .menu__link ul li ul li{
+    width: 100%;
+}
+
+.menu .menu__link ul li:hover > ul{
+    display: initial;
+}
+
+.menu .menu__link ul li ul li{
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #c0c0c0d7;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.menu .menu__link ul li ul li:hover{
+    background-color: #7a7a7a65;
+}
+
+/*MENÚ BARS*/
+.menu__bars{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 20px;
+    display: none;
+}
+
+.menu__bars .menu__bars__item{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: all 300ms;
+    transform-origin: 0px 100%;
+}
+
+.menu__bars .bars--item1{
+    transform: rotate(35deg) translate(1px, -1px);
+}
+
+.menu__bars .bars--item2{
+    opacity: 0;
+}
+
+
+.menu__bars .bars--item3{
+    transform: rotate(-35deg) translate(3px, 2px);
+}
+
+/*Responsive*/
+@media screen and (max-width: 950px){
+    .menu .menu__bars{
+        display: initial;
+    }
+
+    .menu .menu__link{
+        display: none;
+    }
+}
+
+
+/*********************PIE DE PÁGINA*********************/
+/*redes*/
+.footer__section{
+    width: 85%;
+    padding: 25px 0;
+    margin: 0 auto;
+    display: flex;
+    /*gap: 30px;*/
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 2px solid #000;
+} 
+
+.footer__article{
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer__article h6 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer__section .footer__article .redes-1, .redes-2{
+    display: inline-flex;
+    gap: 10px;
+}
+
+.footer__section .footer__article .enlace__libro{
+    width: 120px;
+    margin-top: 15px;
+    border: 1px solid #727272;
+    border-radius: 10px;
+}
+
+.footer-box{
+    font-size: 13px;
+}
+
+.footer__section .footer__razon{
+    width: 100%;
+    text-align: right;
+}

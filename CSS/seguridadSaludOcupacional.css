@@ -1,0 +1,212 @@
+main section{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #9494948f;
+}
+
+h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #551a8b;
+}
+
+a:active{
+    color: red;
+}
+
+details summary::after {
+    content: '➤';
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+details{
+    transition: all 0.5s ease;
+}
+
+details[open] summary ~ * {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+    opacity: 1;
+    }
+}
+
+/*! Cabecera */
+.footer__pde{
+    background-color: #000;
+    color: #fff;
+    padding: 30px 80px;
+    width: 100%;
+}
+
+.footer__pde h1{
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.footer__pde .pde__title{
+    color: #EC661A;
+    font-size: 45px;
+    display: block;
+}
+
+.footer__pde .pde__title2{
+    font-size: 20px;
+    display: block;
+}
+
+.footer__pde .pde__title3{
+    font-size: 60px;
+    display: block;
+}
+
+/*! Anticipa */
+.anticipa{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anticipa article{
+    width: 100%;
+    text-align: left;
+}
+
+.anticipa .anticipa__content1 h2{
+    font-size: 32px;
+}
+
+.anticipa .anticipa__content2 p{
+    margin-bottom: 15px;
+    width: 80%;
+    color: #4d4d4d;
+    line-height: 1.3;
+}
+
+/*! Beneficios */
+.beneficios .beneficios__content{
+    width: 90%;
+    margin: auto;
+    border-left: 3px solid #4e4e4ead;
+}
+
+.beneficios .beneficios__content h2{
+    font-size: 32px;
+    margin: 0 0 28px 64px;
+}
+
+.beneficios .beneficios__content .beneficios__list{
+    margin-left: 64px;
+    list-style: none;
+}
+
+.beneficios .beneficios__list .beneficios__item{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #949494a4;
+}
+
+.beneficios .beneficios__item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.beneficios .beneficios__item p{
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+/*! Dirigido */
+.section__dirigido{
+    display: flex;
+    column-gap: 11rem;
+}
+
+.section__dirigido div{
+    width: 100%;
+}
+
+.section__dirigido div p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #4d4d4d;
+}
+
+.section__dirigido div img{
+    width: 350px;
+    margin-left: 80px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+/*! Malla Curricular */
+.malla .malla__title{
+    display: flex;
+}
+
+.malla .malla__content{
+    width: 90%;
+    margin: auto;
+    border-left: 3px solid #4e4e4ead;
+}
+
+.malla .malla__content .malla__list{
+    margin-left: 64px;
+    list-style: none;
+}
+
+.malla .malla__item{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #949494a4;
+}
+
+.malla .malla__list .malla__item summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #EC661A;
+}
+
+.malla .malla__item h3{
+    margin-bottom: 15px;  
+    font-size: 16px;
+}
+
+.malla .malla__item li{
+    margin: 0 0 5px 20px;
+    font-size: 16px;
+    list-style: disc;
+}
+
+.malla .malla__item li::marker {
+    color: #EC661A;
+}
+
+.malla .malla__item img{
+    margin-top: 5px;
+}

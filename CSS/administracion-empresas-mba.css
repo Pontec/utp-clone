@@ -1,0 +1,89 @@
+/*!Banner */
+.banner .banner__title1 {
+    color: #f1b900;
+}
+
+/*! Formatos*/
+
+
+/*! Siempre Conectados*/
+
+
+/*! Transformación Personal*/
+
+/*! Lista Beneficios*/
+
+/*! Listas Docentes*/
+
+/*! Contenedor Misiones*/
+.contenedor__misiones .carrusel__misiones{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor__misiones .carrusel__content{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: transform 0.5s ease;
+}
+
+.contenedor__misiones .carrusel__content .misiones__card{
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    padding: 1.5rem 4rem;
+    gap: 3rem;
+}
+
+.contenedor__misiones .misiones__card div,
+.contenedor__misiones .misiones__card picture{
+    width: 100%;
+}
+
+.contenedor__misiones h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contenedor__misiones p{
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 5px 0 8px 0;
+}
+
+.contenedor__misiones .anterior,
+.contenedor__misiones .siguiente{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(160, 160, 160, 0.158);
+    color: #000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.contenedor__misiones .anterior{
+    left: 1px;
+}
+
+.contenedor__misiones .siguiente{
+    right: 1px;
+}
+
+.contenedor__misiones .anterior:hover,
+.contenedor__misiones .siguiente:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+
+/*! Malla Curricular */
+
+
+/* ! Admisión */

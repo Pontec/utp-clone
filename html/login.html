@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <title>Login UTP</title>
+</head>
+
+<body>
+    <!--Login-->
+    <section class="login-container">
+        <article class="circle-register">
+            <div class="register">
+                <h3>¿Eres nuevo aquí?</h3>
+                <p>¡Bienvenido a nuestra comunidad! Descubre un mundo lleno de oportunidades accediendo a recursos
+                    exclusivos, materiales de estudio, comunicarte con tus profesores y compañeros, y participa en
+                    actividades académicas. Únete a nosotros para experimentar nuevas experiencias.</p>
+                <button onclick="register();" type="submit">Crear Cuenta</button>
+            </div>
+            <img src="../Resource/logo/register.svg" alt="logo">
+        </article>
+
+        <article class="login-container-two">
+            <picture>
+                <h1><img src="../Resource/logo/logoHome.svg" alt="Logo Escuela de Postgrado" width="300"></h1>
+            </picture>
+            <form method="post" id="form-validation" action="../PHP/login.php">
+                <h2>Iniciar Sesión</h2>
+                <div class="form-group">
+                    <img src="../Resource/Icon/correo-electronico.png" alt="User">
+                    <input type="text" name="user" id="userId" required>
+                    <label>Código o correo UTP</label>
+                </div>
+                <div class="form-group">
+                    <img src="../Resource/Icon/candado.png" alt="block">
+                    <input type="password" name="password" id="password" minlength="8" required>
+                    <label>Contraseña</label>
+                </div>
+                <div class="form-recover">
+                    <a href="#">¿Te olvidaste la contraseña?</a>
+                </div>
+                <button type="submit" class="form-submit" id="submit">Iniciar Sesión</button>
+
+                <div class="form-plataforms">
+                    <p>o inicia sección con estas plataformas</p>
+                    <div>
+                        <ul>
+                            <li><a href="#"><img src="../Resource/Icon/linkedin.png" alt="Linkedin"></a></li>
+                            <li><a href="#"><img src="../Resource/Icon/github.png" alt="Github"></a></li>
+                            <li><a href="#"><img src="../Resource/Icon/facebook.png" alt="Facebook"></a></li>
+                            <li><a href="#"><img src="../Resource/Icon/google.png" alt="Google"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </section>
+
+    <!--Register-->
+    <section class="register-container">
+        <article class="circle-login">
+            <div class="login">
+                <h3>¿Ya eres uno de nosotros?</h3>
+                <p>Estamos encantados de verte nuevamente, inicia sesión en tu cuenta para continuar disfrutando de
+                    nuestro
+                    servicios y mantener tus conexiones existentes. ¡Gracias por ser parte de nuestra comunidad!</p>
+                <button onclick="login();" type="submit">Iniciar Sesión</button>
+            </div>
+            <img src="../Resource/logo/login.png" alt="">
+        </article>
+
+        <article class="register-conteiner-two">
+            <picture>
+                <h1><img src="../Resource/logo/logoHome.svg" alt="logo UTP" width="300"></h1>
+            </picture>
+            <form method="post" action="../PHP/registro.php">
+                <h2>Registrarse</h2>
+                <div class="form-register">
+                    <img src="../Resource/Icon/identificacion.png" alt="identify">
+                    <input type="text" name="name" required>
+                    <label>Nombre</label>
+                </div>
+
+                <div class="form-register">
+                    <img src="../Resource/Icon/identificacion.png" alt="identify">
+                    <input type="text" name="lastname" required>
+                    <label>Apellido</label>
+                </div>
+
+                <div class="form-register">
+                    <img src="../Resource/Icon/correo-electronico.png" alt="email">
+                    <input type="email" name="email" class="regCorreo" required>
+                    <label class="correo">Correo electronico</label>
+                    <p id="errorCorreo" class=""></p>
+                </div>
+
+                <div class="form-register">
+                    <img src="../Resource/Icon/candado.png" alt="block">
+                    <input type="password" name="password" maxlength="16" required>
+                    <label>Contraseña</label>
+                </div>
+
+                <div class="form-terms">
+                    <p>Acepto las términos y condiciones</p>
+                    <input type="checkbox" name="terms">
+                </div>
+
+                <button id="crearCuenta" type="submit" class="form-submit-register">Crear Cuenta</button>
+
+                <div class="register-plataforms">
+                    <p>o registrate con estas plataformas</p>
+                    <div>
+                        <ul>
+                            <li><a href="#"><img src="../Resource/Icon/linkedin.png" alt=""></a></li>
+                            <li><a href="#"><img src="../Resource/Icon/github.png" alt=""></a></li>
+                            <li><a href="#"><img src="../Resource/Icon/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="../Resource/Icon/google.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </section>
+
+    <script src="../JavaScript/login.js"></script>
+</body>
+
+</html>

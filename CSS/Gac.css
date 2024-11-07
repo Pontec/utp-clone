@@ -1,0 +1,185 @@
+@font-face {
+    /* Utilizar para títulos o subtítulos */
+    font-family: 'Helvetica-Bold';
+    src: url(Fonts/Helvetica-Bold.woff2); /* Colocar la dirección del fonts */
+}
+
+@font-face {
+    /* Párrafos y más */
+    font-family: 'Helvetica-Light';
+    src: url(Fonts/Helvetica-Light.woff2); /* Colocar la dirección del fonts */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica-Light';
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+summary {
+    font-family: 'Helvetica-Bold', Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    padding: 50px;
+    width: 100%;
+    border-bottom: 1px solid #9494948f;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+}
+
+.footer__content img {
+    max-width: 450px;
+    margin-left: 250px;
+}
+
+.footer__content h1 {
+    font-size: 40px;
+    color: #000000;
+    max-width: 600px;
+    margin-left: 180px;
+    max-width: 300px;
+}
+
+.docent,
+.estandares {
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #9494948f;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-left: 180px;
+    max-width: 400px;
+}
+
+.content p {
+    margin-bottom: 15px;
+    width: 80%;
+    color: #000000;
+    line-height: 1.3;
+    margin-left: 10px;
+    max-width: 700px;
+    font-size: 17px;
+}
+
+.estandares {
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    border-bottom: 1px solid #ccc;  
+}
+
+.estandares h2 {
+    margin-top: 170px;
+}
+
+.estandares .details-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+}
+
+.estandares details {
+    margin-bottom: 10px;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    max-width: 700px; 
+}
+
+.estandares details:first-of-type {
+    border-top: none;
+}
+
+.estandares summary {
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.estandares summary::marker {
+    font-size: 20px;
+    color: #333;
+}
+
+.summary-bold {
+    font-weight: bold;
+}
+
+.estandares details p {
+    margin: 10px 0; 
+    padding-left: 20px;
+    transition: max-height 0.3s ease-out; 
+    max-height: 0; 
+    overflow: hidden;
+    font-size: 17px; 
+}
+
+.estandares details[open] p {
+    max-height: 1000px; 
+}
+
+
+.benefits {
+    border-bottom: 1px solid #ccc;
+    padding: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.benefits h2 {
+    font-size: 36px;
+    margin-left: 180px;
+    max-width: 400px;
+    margin-bottom: 50px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.benefits-list li {
+    width: calc(25% - 25px);
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.benefits-list img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.benefits-list p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #333;
+}

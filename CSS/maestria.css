@@ -1,0 +1,527 @@
+main section {
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #9494948f;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #551a8b;
+}
+
+a:active {
+    color: red;
+}
+
+details {
+    transition: all 0.5s ease;
+}
+
+details[open] summary~* {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+details summary::after {
+    content: '➤';
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+details p {
+    width: 90%;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 5px 0 8px 0;
+}
+
+/* !Banner */
+.banner {
+    background-color: #000;
+    color: #fff;
+    padding: 3rem 6.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner h1 {
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+
+.banner .banner__title1 {
+    font-size: 45px;
+    display: block;
+}
+
+
+.banner .banner__title2 {
+    font-size: 35px;
+    display: block;
+}
+
+.banner .banner__title3 {
+    font-size: 60px;
+    display: block;
+}
+
+.banner img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/*! Ventana Modal - Solicitar información */
+.modal{
+    position: fixed;
+    display: none;
+    background-color: #0000005e;
+    height: 100vh;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.modal .modal__formulario{
+    background-color: #fff;
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    padding: 1rem 2rem;
+    font-size: 15px;
+}
+
+.modal .modal__formulario h6{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.modal .modal__formulario .form__input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 8px;
+    padding: 0 10px;
+}
+
+.modal .modal__formulario .form__list{
+    display: flex;
+    margin-bottom: 8px;
+    gap: 5px;
+}
+.modal .modal__formulario .form__list select,
+.modal .modal__formulario .form__list input
+{
+    width: 100%;
+    height: 30px;
+}
+
+.modal .modal__formulario .content__label{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal .modal__formulario .form__label{
+    width: 100%;
+    font-size: 14px;
+}
+
+
+.modal .modal__formulario .ruc{
+    font-size: 14px;
+    margin-bottom: 0.8rem;
+}
+
+.modal .modal__formulario .ruc span{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.modal .modal__formulario .content__btnEnviar{
+    text-align: center;
+}
+
+.modal .modal__formulario .boton__enviar{
+    cursor: pointer;
+    border: solid 2px #000;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+    background: #e2e2e2;
+    font-weight: 1000;
+    font-size: 14px;
+}
+
+.modal .modal__formulario .modal__cerrar{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal .modal__formulario .modal__cerrar{
+    width: 35px;
+    padding: 5px 11px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.modal .modal__formulario .modal__cerrar:hover{
+    background-color: #ff000089;
+}
+
+/*! Formatos*/
+.contenedor {
+    height: 200px;
+}
+
+.info {
+    border: solid 2px black;
+    padding: 2rem 4rem;
+    margin-top: -5rem;
+    background-color: white;
+}
+
+.info-seleccion {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.info-seleccion h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.modalidad-classes {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.modalidad-classes li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px rgb(0, 0, 0);
+    width: 14rem;
+    height: 2.5rem;
+    transition: background-color 0.3s;
+}
+
+.modalidad-classes li:hover {
+    background-color: #f1b900;
+}
+
+.modalidad-classes .item.selected {
+    background-color: #f1b900;
+    border: solid 3px #f1b900;
+}
+
+.item a {
+    color: #000;
+}
+
+/*! Formatos 2*/
+.info-modalidad {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.info-modalidad li {
+    list-style: none;
+    width: 100%;
+}
+
+.info-modalidad li>h5 {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.li-btn {
+    width: 270px;
+    padding: 15px 10px;
+    border-style: none;
+    border: #000000 solid 2px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: box-shadow 0.3s;
+}
+
+.li-btn a{
+    color: #000;
+}
+
+.li-btn:hover {
+    box-shadow: 0 0 0 10px black;
+}
+
+.contenedor__info a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.contenedor__info p {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+/*! Contenedor */
+.contenedor .contenedor__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor .contenedor__presencial {
+    display: block;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contenedor .contenedor__vivo {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contenedor .contenedor__online {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/*! Siempre Conectados*/
+.contenedor__conectados {
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+    column-gap: 9rem;
+}
+
+.conectados__content--two .nombre {
+    font-size: 23px;
+    color: #4d4d4d;
+    margin-bottom: 23px;
+}
+
+.conectados__content--two .descripcion {
+    font-size: 16;
+    color: #4d4d4d;
+    font-weight: 100;
+    line-height: 1.4;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.comp_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    border: solid 3px black;
+    width: 120px;
+    padding: 2px;
+    height: 35px;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+    column-gap: 0.8rem;
+    color: #000;
+}
+
+.comp_btn a{
+    color: #000;
+}
+
+.comp_btn:hover {
+    box-shadow: 0 0 0 5px black;
+
+}
+
+.comp_btn p {
+    font-size: 16;
+    font-weight: bold;
+}
+
+/*! Transformación Personal*/
+.contenedor-block {
+    display: flex;
+    justify-content: center;
+    column-gap: 8rem;
+}
+
+.block {
+    width: 100%;
+}
+
+.contenedor-info-block p {
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*!Listas Generales*/
+.contenedor__beneficios .beneficios__content,
+.contenedor__docentes .docentes__content {
+    width: 90%;
+    margin: auto;
+    border-left: 3px solid #4e4e4ead;
+}
+
+.contenedor__beneficios .beneficios__list,
+.contenedor__docentes .docentes__list {
+    margin-left: 64px;
+    list-style: none;
+}
+
+.contenedor__beneficios .beneficios__item,
+.contenedor__docentes .docentes__item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #949494a4;
+}
+
+.contenedor__beneficios .beneficios__item details>div {
+    padding: 8px 0 10px 0;
+}
+
+.contenedor__beneficios .beneficios__item details div .beneficios__parrafos {
+    margin-top: 5px;
+}
+
+.contenedor__docentes .docentes__item div {
+    display: flex;
+    align-items: center;
+    column-gap: 6rem;
+    padding: 6px 0 10px 0;
+}
+
+.contenedor__docentes .docentes__item div img {
+    width: 300px;
+}
+
+.contenedor__docentes .docentes__item div p {
+    width: 450px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/*! Malla Curricular */
+.contenedor__malla .malla__title {
+    display: flex;
+}
+
+.malla__picture{
+    position: relative;
+}
+
+.malla__img {
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+/*TODO: VENTANA MODAL - MALLA*/
+.malla__img{
+    position: relative;
+}
+
+.malla__modal{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+/* .malla__modal:hover{
+    background-color: #0000005e;
+}
+
+.li-btn{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+ */
+
+
+/* ! Admisión */
+.contenedor__ad {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor__ad .list__ad {
+    margin-bottom: 2rem;
+}
+
+.contenedor__ad .list__ad .item__ad {
+    list-style: disc;
+    margin: .5rem 0 0 1rem;
+    color: #4d4d4d;
+}
+
+.contenedor__ad button {
+    display: block;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,504 @@
+@font-face {
+   font-family: 'Roboto';
+   src: url(/Fonts/RobotoMono-Regular.ttf);
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Roboto', sans-serif;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+}
+
+/*********************LOGIN*********************/
+.login-container{
+   display: flex;
+   width: 100%;
+   max-width: 1500px;
+   margin: auto;
+   height: 700px;
+}
+
+.login-container article{
+   height: 100%;
+   padding: 10px;
+}
+
+.circle-register{
+   width: 60%;
+   position: relative;
+}
+
+.circle-register::before{
+   content: '';
+   position: absolute;
+   top: -5%;
+   left: -120%;
+   display: block;
+   width: 2000px;
+   border-radius: 50%;
+   transform: translateY(-50%);
+   height: 2000px;
+   z-index: -2;
+   transition: all .3s ease-in-out;
+   background: linear-gradient(-45deg, #000000 0%, #00b7ff 100%);
+}
+
+.circle-register img{
+   display: block;
+   width: 450px;
+   position: absolute;
+   bottom: 0;
+   left: 100px;
+   z-index: -1;
+}
+
+.register{
+   color: #ffffff;
+   padding: 50px;
+   text-align: center;
+}
+
+.register h3{
+   font-size: 30px;
+   margin: 15px;
+}
+
+.register p{
+   font-size: 18px;
+   font-family: sans-serif;
+   line-height: 1.5;
+   margin: 15px;
+}
+
+.register button{
+   color: #ffffff;
+   font-size: 20px;
+   font-weight: bold;
+   text-transform: uppercase;
+   background-color: transparent;
+   padding: 8px;
+   border: 2px solid #929292cb;
+   border-radius: 25px;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+.register button:hover{
+   background-color: #92929286;
+}
+
+/*Form*/
+.login-container-two{
+   width: 40%;
+   margin: 30px 0;
+}
+
+.login-container-two form{
+   width: 100%;
+   max-width: 450px;
+   margin: auto;
+}
+
+.login-container-two form h2{
+   padding: 10px;
+   border-bottom: 1px solid #c0c0c09f;
+   margin: 15px 0;
+}
+
+.login-container-two form .form-group{
+   margin-top: 35px;
+   position: relative;
+}
+
+.login-container-two form input{
+   width: 60%;
+   padding: 5px;
+   font-size: 16px;
+   border: none;
+   background: none;
+   outline: none;
+   border-bottom: 2px solid #adadad;
+}
+
+.login-container-two form label{
+   position: absolute;
+   top: 5%;
+   left: 105px;
+   color: #adadad;
+   transform: translateY(-5%);
+   font-size: 16px;
+   pointer-events: none;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label{
+   top: -20px;
+   color: #000000;
+   font-weight: bold;
+   margin-bottom: 5px;
+   transition: top 0.3s ease, color 0.3s ease;
+}
+
+.form-recover{
+   width: 100%;
+   margin-top: 15px;
+}
+
+.form-recover a{
+   font-family: sans-serif;
+   font-size: 15px;
+   text-decoration: none;
+}
+
+.form-recover a:hover{
+   font-weight: bold;
+}
+
+.form-submit{
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 15px;
+   margin-top: 15px;
+   padding: 5px;
+   letter-spacing: 1px;
+   background-color: transparent;
+   border: 2px solid #2c2c2cc5;
+   border-radius: 15px;
+   cursor: pointer;
+}
+
+.form-submit:hover{
+   box-sizing: border-box;
+   border: 2px solid #000000;
+   background-color: #000000;
+   color: #ffffff;
+}
+
+.form-plataforms{
+   margin-top: 15px;
+   font-size: 15px;
+   font-family: sans-serif;
+}
+
+.form-plataforms div ul{
+   list-style: none;
+   display: inline-flex;
+   gap: 15px;
+   margin-top: 15px;
+}
+
+/***********RESPONSIVE-LOGIN***********/
+@media screen and (max-width: 1460px){
+   .circle-register::before{
+       left: -150%;
+   }
+   .register{
+       max-width: 600px;
+   }
+}
+@media screen and (max-width: 1310px){
+   .circle-register::before{
+       top: -10%;
+       left: -170%;
+   }
+}
+@media screen and (max-width: 1210px){
+   .circle-register::before{
+       top: -5%;
+       left: -190%;
+   }
+}
+@media screen and (max-width: 1130px){
+   .circle-register::before{
+       top: 0;
+       left: -210%;
+   }
+}
+@media screen and (max-width: 1060px){
+   .circle-register::before{
+       height: 150%;
+       transform: translateY(0);
+       top: -60%;
+       left: -40%;
+       width: 250%;
+   }
+   .login-container{
+       height: auto;
+   }
+   .login-container article{
+       width: 100%;
+       margin-bottom: 15px;
+       overflow: hidden;
+   }
+   .circle-register .register{
+       width: 100%;
+       padding: 20px;
+       max-width: 100%;
+   }
+   .circle-register img{
+       display: block;
+       width: 100%;
+       position: initial;
+       bottom:0;
+       max-width: 350px;
+       margin: auto;
+   }
+   body{
+       overflow: auto;
+       height: auto;
+   }
+}
+
+
+/*********************REGISTER*********************/
+.register-container{
+   display: none;
+   width: 100%;
+   max-width: 1500px;
+   margin: auto;
+   height: 700px;
+}
+
+.register-container article{
+   height: 100%;
+   padding: 10px;
+}
+
+.circle-login{
+   width: 60%;
+   position: relative;
+}
+
+.circle-login::before{
+   content: '';
+   position: absolute;
+   top: -5%;
+   left: -120%;
+   display: block;
+   width: 2000px;
+   border-radius: 50%;
+   transform: translateY(-50%);
+   height: 2000px;
+   z-index: -2;
+   transition: all .3s ease-in-out;
+   background: linear-gradient(-45deg, #000000 0%, #00b7ff 100%);
+}
+
+.circle-login img{
+   display: block;
+   width: 450px;
+   position: absolute;
+   bottom: 0;
+   left: 100px;
+   z-index: -1;
+}
+
+.login{
+   color: #ffffff;
+   padding: 50px;
+   text-align: center;
+}
+
+.login h3{
+   font-size: 30px;
+   margin: 15px;
+}
+
+.login p{
+   font-size: 18px;
+   font-family: sans-serif;
+   line-height: 1.5;
+   margin: 15px;
+}
+
+.login button{
+   color: #ffffff;
+   font-size: 20px;
+   font-weight: bold;
+   text-transform: uppercase;
+   background-color: transparent;
+   padding: 8px;
+   border: 2px solid #929292cb;
+   border-radius: 25px;
+   margin-top: 25px;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+.login button:hover{
+   background-color: #92929286;
+}
+
+/*Form*/
+.register-conteiner-two{
+   width: 40%;
+   margin: 30px 0;
+}
+
+.register-conteiner-two form{
+   width: 100%;
+   max-width: 450px;
+   margin: auto;
+}
+
+.register-conteiner-two form h2{
+   padding: 10px;
+   border-bottom: 1px solid #c0c0c09f;
+   margin: 15px 0;
+}
+
+.register-conteiner-two form .form-register{
+   margin-top: 35px;
+   position: relative;
+}
+
+.register-conteiner-two form input{
+   width: 60%;
+   padding: 5px;
+   font-size: 16px;
+   border: none;
+   background: none;
+   outline: none;
+   border-bottom: 2px solid #adadad;
+}
+
+.register-conteiner-two form label{
+   position: absolute;
+   top: 5%;
+   left: 105px;
+   color: #adadad;
+   transform: translateY(-5%);
+   font-size: 16px;
+   pointer-events: none;
+}
+
+.form-register input:focus ~ label,
+.form-register input:valid ~ label{
+   top: -20px;
+   color: #000000;
+   font-weight: bold;
+   margin-bottom: 5px;
+   transition: top 0.3s ease, color 0.3s ease;
+}
+
+.form-terms{
+   width: 300px;
+   margin: 15px auto;
+   position: relative;
+}
+
+.form-terms p{
+   font-family: sans-serif;
+   text-align: left;
+}
+
+.form-terms input{
+   position: absolute;
+   top: 3px;
+   left: 165px;
+   width: 100%;
+}
+
+.form-submit-register{
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 15px;
+   padding: 5px;
+   letter-spacing: 1px;
+   background-color: transparent;
+   border: 2px solid #2c2c2cc5;
+   border-radius: 15px;
+   cursor: pointer;
+}
+
+.form-submit-register:hover{
+   box-sizing: border-box;
+   border: 2px solid #000000;
+   background-color: #000000;
+   color: #ffffff;
+}
+
+.register-plataforms{
+   margin-top: 15px;
+   font-size: 15px;
+   font-family: sans-serif;
+}
+
+.register-plataforms div ul{
+   list-style: none;
+   display: inline-flex;
+   gap: 15px;
+   margin-top: 15px;
+}
+
+/***********RESPONSIVE-REGISTER***********/
+@media screen and (max-width: 1460px){
+   .circle-login::before{
+       left: -150%;
+   }
+   .login{
+       max-width: 600px;
+   }
+}
+@media screen and (max-width: 1310px){
+   .circle-login::before{
+       top: -10%;
+       left: -170%;
+   }
+}
+@media screen and (max-width: 1210px){
+   .circle-login::before{
+       top: -5%;
+       left: -190%;
+   }
+}
+@media screen and (max-width: 1130px){
+   .circle-login::before{
+       top: 0;
+       left: -210%;
+   }
+}
+@media screen and (max-width: 1060px){
+   .circle-login::before{
+       height: 150%;
+       transform: translateY(0);
+       top: -60%;
+       left: -40%;
+       width: 250%;
+   }
+   .register-container{
+       height: auto;
+   }
+   .register-container article{
+       width: 100%;
+       margin-bottom: 15px;
+       overflow: hidden;
+   }
+   .circle-login .login{
+       width: 100%;
+       padding: 20px;
+       max-width: 100%;
+   }
+   .circle-login img{
+       display: block;
+       width: 100%;
+       position: initial;
+       bottom:0;
+       max-width: 350px;
+       margin: auto;
+   }
+   body{
+       overflow: auto;
+       height: auto;
+   }
+}

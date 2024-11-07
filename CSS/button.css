@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'Helvetica-Bold' ;
+  src: url(/Fonts/Helvetica-Bold.woff2);
+}
+
+
+.btn {
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: 3px;
+    --curve-size: 20px;
+    --blur: 30px;
+    --bg: #080312;
+    --color: #afffff;
+    color: var(--color);
+    cursor: pointer;
+    /* use position: relative; so that BG is only for .btn */
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: 2px 30px;
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    clip-path: polygon(
+      /* Top-left */ 0% var(--curve-size),
+      var(--curve-size) 0,
+      /* top-right */ 100% 0,
+      100% calc(100% - var(--curve-size)),
+      /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
+      /* bottom-right 2 */ 0 100%
+    );
+    transition: color 250ms;
+    margin-left: 15px;
+    height: 40px;
+  }
+
+  .btn a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica-Bold';
+  }
+  
+  .btn::after,
+  .btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+  
+  .btn::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+  }
+  
+  @keyframes move-bg7234 {
+    0% {
+      background-position: 31% 0%;
+    }
+  
+    50% {
+      background-position: 70% 100%;
+    }
+  
+    100% {
+      background-position: 31% 0%;
+    }
+  }
+  
+  .btn::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+      /* Top-left */ var(--border-width)
+        calc(var(--curve-size) + var(--border-width) * 0.5),
+      calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+      /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width)),
+      /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
+    );
+    transition: clip-path 500ms;
+  }
+  
+  .btn:where(:hover, :focus)::after {
+    clip-path: polygon(
+      /* Top-left */ calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      calc(100% - var(--border-width)) var(--border-width),
+      /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width)),
+      /* bottom-right 2 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width))
+    );
+    transition: 200ms;
+  }
+  
+  .btn:where(:hover, :focus) {
+    color: #fff;
+  }
+
+
+
+  .btn1__link{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .btn1__link::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background-color: #212121;
+    transition: 0.3s ease-in-out;
+    transform: scaleY(1);
+  }
+  
+  .btn1__link:hover::before {
+    transform: scaleY(0);
+  }
+  
+  .btn1__link::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background-color: #212121;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(1);
+    transition-delay: 0.5s;
+  }
+  
+  .btn1__link:hover::after {
+    transform: scaleX(0);
+  }
+  
+  .btn1__link span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .btn1 {
+    background-color: none;
+    text-decoration: none;
+    background-color: #212121;
+    border: none;
+  }
+  
+
+  .btn__link{
+    height: 50px;
+    margin-top: 15px;
+    border: unset;
+    border-radius: 15px;
+    z-index: 1;
+    background: #e2e2e2;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+  }
+
+  .btn__link a{
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #212121;
+  }
+
+  .btn__link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+  }
+
+  .btn__link a:hover {
+    color: #e8e8e8;
+  }
+  
+  .btn__link:hover::before {
+    width: 100%;
+  }

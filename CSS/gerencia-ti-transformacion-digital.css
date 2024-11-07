@@ -1,0 +1,22 @@
+/*! Banner */
+.banner .banner__title1{
+    color: #6667ab;
+}
+
+/*!  Formatos*/
+
+.modalidad-classes li:hover{
+    background-color: #6667ab !important;
+}
+
+.modalidad-classes .item.selected {
+    background-color: #6667ab !important;
+    border: solid 3px #6667ab !important;
+}
+
+/*! Siempre Conectados */
+.conectados__content--two .comp_btn{
+    margin-top: 3.5rem;
+}
+
+/*! Transformación Personal*/

@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/gestion-construccion.css">
+    <title>Maestría en Marketing y Gestión Comercial | Postgrado UTP</title>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="menu__logo">
+            <h1>
+                <a href="../html/pre.html">
+                    <img src="../Resource/logo/logoHome.svg" alt="logoUTP">
+                </a>
+            </h1>
+        </div>
+
+        <nav class="menu__link">
+            <ul>
+                <li class="menu__item">
+                    <a class="menu__enlace" href="#">Institucional</a>
+                    <ul>
+                        <li>
+                            <a href="../html/nosotros.html">¿Quiénes Somos?</a>
+                        </li>
+                        <li>
+                            <a href="../html/acreditacion-acbsp.html">Acreditación ACBSP</a>
+                        </li>
+                        <li>
+                            <a href="../html/acreditacion-gac-0.html">Acreditación GAC</a>
+                        </li>
+                        <li>
+                            <a href="../html/docentes.html">Nuestros Docentes</a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://portaldocente.utp.edu.pe/Home/UTP?ReturnUrl=/Home/IndexHome">Portal del
+                                Docente</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://estudiantes.postgradoutp.edu.pe/">Portal del Estudiante</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__enlace" href="#">Maestrías</a>
+                    <ul>
+                        <li>
+                            <a href="../html/administracion-empresas-mba.html">Administración de Empresas
+                                (MBA)</a>
+                        </li>
+                        <li>
+                            <a href="../html/docencia-universitaria-gestion-educativa.html">Docencia
+                                Universitaria y Gestión Educativa</a>
+                        </li>
+                        <li>
+                            <a href="../html/gerencia-operaciones-logistica.html">Gerencia de Operaciones y
+                                Logística</a>
+                        </li>
+                        <li>
+                            <a href="../html/gerencia-ti-transformacion-digital.html">Gerencia de TI y
+                                Transformación Digital</a>
+                        </li>
+                        <li>
+                            <a href="../html/gerencia-talento-humano.html">Gerencia del Talento
+                                Humano</a>
+                        </li>
+                        <li>
+                            <a href="../html/gestion_publica.html">Gestión Pública</a>
+                        </li>
+                        <li>
+                            <a href="../html/gestion-construccion.html">Gestión de la Construcción</a>
+                        </li>
+                        <li>
+                            <a href="../html/marketing-gestion-comercial.html">Marketing y Gestión Comercial</a>
+                        </li>
+                        <li>
+                            <a href="../html/project-management.html">Project Management</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__enlace" href="#">Especializaciones</a>
+                    <ul>
+                        <li>
+                            <a>Programas de Especialización</a>
+                            <ul>
+                                <li>
+                                    <a href="../html/gestion-proyectos.html">Gestión
+                                        de Proyectos</a>
+                                </li>
+                                <li>
+                                    <a href="../html/seguridad-salud-ocupacional-medio-ambiente.html">Seguridad
+                                        y Salud Ocupacional y
+                                        Medioambiente</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Programas">
+                            <a>Programas</a>
+                            <ul>
+                                <li>
+                                    <a href="../html/inretail-lab.html">InRetail Lab -
+                                        Programa de
+                                        Especialización en Gestión Retail</a>
+                                </li>
+                                <li>
+                                    <a href="../html/innovation-lab.html">Innovation Lab -
+                                        Programa de
+                                        Especialización en Innovación y
+                                        Aceleración</a>
+                                </li>
+                                <li>
+                                    <a href="../html/intalent-lab.html">Intalent Lab -
+                                        Programa de
+                                        Especialización en Gestión de Talento
+                                        Humano</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item menu__blog">
+                    <a target="_blank" href="blog.html">Blog</a>
+                </li>
+                <li class="menu__item menu__contact">
+                    <a href="#">Contáctanos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="menu__bars">
+            <span class="menu__bars__item menu__bars--item1"></span>
+            <span class="menu__bars__item menu__bars--item2"></span>
+            <span class="menu__bars__item menu__bars--item3"></span>
+        </div>
+    </header>
+
+    <main>
+        <article class="top-k">
+            <div class="cabeza-k">
+                <H2>MKT</H2>
+                <div class="logo-top">
+                    <h1><small>Maestria en</small>Marketing y Gestión Comercial</h1>
+                    <img src="../Resource/img/acreditacionACBSP.webp" alt="acreditacion ACBSP">
+                </div>
+            </div>
+        </article>
+        <article class="modal">
+            <div class="modal-contenido">
+                <h1 class="modal-titulo">Contactanos</h2>
+                    <!--la action guardar formulario se encuentra la configuracion para q conectes la db-->
+                    <form name="formulario" action="guardar_informacion.php" method="POST">
+                        <input type="text" name="nombre" placeholder="Nombres*" required><br>
+                        <input type="text" name="apellidoP" placeholder="Apellido Paterno*" required><br>
+                        <input type="text" name="apellidoM" placeholder="Apellido Materno*" required><br>
+                        <input type="number" name="DNI" placeholder="DNI*" required><br>
+                        <input type="number" name="celular" placeholder="Celular*" required><br>
+                        <input type="email" name="email" placeholder="Email*" required><br>
+                        <input type="text" name="ciudad" placeholder="Ciudad Residencia*" required><br>
+                        ¿Cuentas con Grado bachiller? <input type="checkbox" name="grado_bachiller" required><br>
+                        <p class="ruc">
+                            Razón Social: UTP S.A.C<br>
+                            RUC: 20462509236
+                        </p>
+                        <input type="submit" value="Solicitar informacion" class="enviar"><br>
+                        <span class="modal-cerrar" onclick="ocultar()">x</span>
+                    </form>
+            </div>
+        </article>
+        <section class="info-contenedor">
+            <div class="info">
+                <h3 class="primero">Elige el formato de tu interes</h3>
+
+                <input type="radio" id="presencial" name="mod" value="op1" class="radio-boton" checked>
+                <label for="presencial" class="presencial-radio">Presenciales</label>
+                <div id="cont1" class="contenido">
+                    <p><b>Fecha de Inicio:</b> 18 de junio<br>
+                        <b>Horario:</b> Martes y jueves de 6:30 p.m a 10:30 p.m<br>
+                        <b>Duración:</b> 22 meses aproximadamente<br>
+                        <b>Duración:</b> 25 cuotas de S/.900<br>
+                        <b>Contacto:</b> Fiorella Leonardi al 905 448 000, 924 361 407
+                    </p>
+                </div>
+
+
+                <input type="radio" id="vivo" name="mod" value="op2" class="radio-boton">
+                <label for="vivo" class="vivo-radio">Clases en Vivo</label>
+                <div id="cont2" class="contenido">
+                    <p><b>Fecha de Inicio:</b> 18 de junio<br>
+                        <b>Horario:</b> Martes y jueves de 6:30 p.m a 10:30 p.m<br>
+                        <b>Duración:</b> 22 meses aproximadamente<br>
+                        <b>Duración:</b> 25 cuotas de S/.740<br>
+                        <b>Contacto:</b> Fiorella Leonardi al 905 448 000, 924 361 407
+                    </p>
+                </div>
+
+
+                <input type="radio" id="online" name="mod" value="op3" class="radio-boton">
+                <label for="online" class="online-radio">Online Asincrónico</label>
+                <div id="cont3" class="contenido">
+                    <p><b>Fecha de Inicio:</b> 13 mayo<br>
+                        <b>Horario:</b> Online<br>
+                        <b>Duración:</b> 18 meses aproximadamente<br>
+                        <b>Inversión:</b> 20 cuotas de S/.845<br>
+                        <b>Contacto:</b> Fiorella Leonardi al 905 448 000, 924 361 407
+                    </p>
+                </div>
+                <!--botonmostrar-->
+                <button class="boton-mostrar" onclick="mostrar()">Solicitar mas informacion</button>
+            </div>
+        </section>
+
+        <section class="top-titulares">
+            <h2>Siempre Conectados</h2>
+            <div class="graduado">
+                <p><b>Alex Morán Navia</b><br>
+                    Graduado de la Maestría en EPGUTP, Chief Marketing Officer LATAM de GuruSoft Ecuador<br>
+                    y especialista en Marketing de Contenidos y Branding Design. Le gusta leer y el diseño gráfico.</p>
+                <img class="foto-moran" src="../Resource/Docentes/AlexNavia.webp" width="300" alt="alex_moran">
+            </div>
+        </section>
+        <hr>
+        <section class="top-secundarios">
+            <h2>Diseñar e Implementar Estrategias de Marketing</h2>
+            <div class="textos">
+                <p>El mercado actual propone nuevos retos para los profesionales de Marketing. Las recetas
+                    tradicionales<br>
+                    ya no tienen el mismo impacto de años pasados debido a la explosión de medios digitales, el
+                    desarrollo<br>
+                    de dispositivos móviles y el crecimiento masivo de internet.<br>
+                    <br>
+                    Es importante considerar que todos estos factores deben estar integrados en nuestra
+                    planificación<br>
+                    comercial, la cual debe plantearse de acuerdo a las necesidades del consumidor de hoy. Por ello,
+                    todos<br>
+                    los esfuerzos de las marcas deben apuntar a la diferenciación y a la generación de valor, factores
+                    que<br>
+                    les permitirán mantenerse vigentes en el tiempo.
+                    <br>
+                    En este contexto, el objetivo de la Maestría es desarrollar las competencias necesarias para diseñar
+                    e implementar<br>
+                    estrategias de marketing en un entorno cambiante, que se caracteriza por un mayor poder del
+                    consumidor.<br>
+                    <br>
+                    Este programa se orienta a la planificación comercial en un mundo digital y dinámico, donde la
+                    generación de valor<br>
+                    al cliente se ha convertido en un factor determinante para el engagement con las marcas. Además,
+                    esta maestría busca<br>
+                    formar especialistas en marketing altamente preparados para la planificación de actividades
+                    enfocadas a la satisfacción<br>
+                    del cliente, la gestión eficiente de recursos, la gestión estratégica de la distribución y el diseño
+                    de estrategias de<br>
+                    comunicación 360°.<br>
+                    <br>
+                    Nuestra Maestría en Marketing y Gestión Comercial está acreditado por ACBSP, una Acreditación
+                    Internacional de Estados<br>
+                    Unidos que garantiza la calidad académica de nuestra Escuela, además, destaca y promueve la mejora
+                    continua de los procesos.<br>
+                    Asimismo reconoce la excelencia en la enseñanza de nuestra maestría así como en los programas de
+                    negocios en todo el mundo.
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section class="beneficios">
+            <h2>Beneficios</h2>
+            <div class="beneficios-contenido">
+                <ul class="beneficios-lista">
+                    <li class="beneficios-items">
+                        <details>
+                            <summary><b>4 Certificaciones</b></summary>
+                            <p>- Maestro en Marketing y Gestión Comercial, otorgado por la Universidad Tecnológica del
+                                Perú.<br>
+                                - Máster en Marketing Digital y Transformación Empresarial, otorgado por la EUSCHOOL,
+                                España*.<br>
+                                - Misión Académica Internacional con la Universidad Konrad Lorenz, Colombia*.<br>
+                                - Certificado en Biomimicry en alianza con Origgen.<br>
+                                *Las certificaciones en la EUSCHOOL (España) y Konrad Lorenz (Colombia), son opcionales
+                                y no están incluidas en la inversión de la maestría.
+                        </details>
+                    </li>
+                    <li class="beneficios-items">
+                        <details>
+                            <summary><b>Acreditación ACBSP</b></summary>
+                            <p>Nuestra Maestría en Marketing y Gestión Comercial está acreditado por ACBSP, una
+                                Acreditación Internacional de Estados Unidos que garantiza la calidad académica de
+                                nuestra Escuela, además, destaca y promueve la mejora continua de los procesos. Asimismo
+                                reconoce la excelencia en la enseñanza de nuestra maestría así como en los programas de
+                                negocios en todo el mundo.
+                        </details>
+                    </li>
+                    <li class="beneficios-items">
+                        <details>
+                            <summary><b>Misión Académica Internacional (Opcional)* con la Universidad KONRAD LORENZ de
+                                    Colombia.</b></summary>
+                            <p>Quienes participen de esta Misión podrán especializarse con la Experiencia de Inmersión
+                                Internacional en el Comportamiento del Consumidor a nombre de Konrad Lorenz -
+                                Colombia.<br>
+                                *La Misión Internacional es opcional y no está incluida en la inversión de la Maestría
+                                en Marketing y Gestión Comercial.
+                        </details>
+                    </li>
+                    <li class="beneficios-items">
+                        <details>
+                            <summary><b>Máster Internacional (Opcional)* con la European School of Leadership (EUSCHOOL)
+                                    de España</b></summary>
+                            <p>Quienes participen en este Máster podrán especializarse en Marketing Digital y
+                                Transformación Empresarial a nombre de EUSCHOOL - España.<br>
+                                *El Máster es opcional y no está incluido en la inversión de la Maestría en Marketing y
+                                Gestión Comercial.
+                        </details>
+                    </li>
+                    <li class="beneficios-items">
+                        <details>
+                            <summary><b>Estrategias Enfocadas en el Consumidor</b></summary>
+                            <p>El programa desarrolla las competencias necesarias para la planificación e implementación
+                                de estrategias<br>
+                                comerciales orientadas a la generación de valor, experiencias inolvidables y el
+                                engagement de los consumidores.
+                        </details>
+                    </li>
+                    <li class="beneficios-items">
+                        <details>
+                            <summary><b>Conocimiento Profundo del Mercado</b></summary>
+                            <p>La Maestría forma profesionales que lideran iniciativas enfocadas en la diferenciación
+                                sobre sus competidores, a través de un diagnóstico de la situación<br>
+                                interna y la información obtenida de investigaciones de mercado, insights y conducta del
+                                consumidor.
+                        </details>
+                    </li>
+                    <li class="beneficios-items">
+                        <details>
+                            <summary><b>Capacidad Analítica y Deductiva</b></summary>
+                            <p>La Maestría se enfoca en preparar al participante para la toma de decisiones estratégicas
+                                a través de la gestión de datos, el cuestionamiento<br>
+                                de los modelos de negocio y el análisis intensivo de indicadores que garanticen el
+                                cumplimiento de objetivos y metas.
+                        </details>
+                    </li>
+                    <li class="beneficios-items">
+                        <details>
+                            <summary><b>Comunicación 360°</b></summary>
+                            <p>El egresado estará en capacidad de generar oportunidades de mercado a través del uso de
+                                dispositivos móviles y redes sociales, las<br>
+                                cuales se han convertido en herramientas clave para los procesos relacionados con la
+                                experiencia del cliente.
+                        </details>
+                    </li>
+                    <li class="beneficios-items">
+                        <details>
+                            <summary><b>Neurociencia Aplicada al Marketing</b></summary>
+                            <p>Nuestra Escuela de Postgrado ofrece a los participantes de esta Maestría experiencia en
+                                el uso y herramientas de Neuromarketing.
+                        </details>
+                    </li>
+                    <li class="beneficios-items">
+                        <details>
+                            <summary><b>Evaluación de Competencias</b></summary>
+                            <p>En la EPG nos aseguramos de que nuestros estudiantes logren las competencias generales y
+                                específicas ofrecidas en cada programa de maestría.<br>
+                                Por ello, todos los estudiantes participan en una medición de competencias, en dos
+                                oportunidades, durante sus estudios. Cada estudiante recibe<br>
+                                un informe personalizado con sus resultados, los que permiten identificar oportunidades
+                                de mejora. Esta información nos permite seguir mejorando<br>
+                                nuestros procesos formativos, ya que estamos comprometidos con la mejora continua.
+                        </details>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="slider">
+                <div class="slide">
+                    <h2>Misión Académica Internacional (Opcional)* con la Universidad KONRAD LORENZ de Colombia.</h2>
+                    <p>Quienes participen de esta Misión podrán especializarse con la Experiencia de Inmersión
+                        Internacional en el Comportamiento del Consumidor a nombre de Konrad Lorenz - Colombia.<br>
+                        *La Misión Internacional es opcional y no está incluida en la inversión de la Maestría en
+                        Marketing y Gestión Comercial.<br>
+                        <img src="../Resource/img/mm_1.webp" width="500" alt="alex_moran">
+                </div>
+
+                <div class="slide">
+                    <h2>La EPGUTP y Origen</h2>
+                    <p>Se unen en alianza para incorporar el taller de Biomimicry en una inmersión personalizada donde
+                        se desarrollan 5 metodologías alternas.<br>
+                        Una experiencia disruptiva en el mundo de la innovación circular, que busca que los ejecutivos
+                        aprendan a imitar las estrategias de la<br>
+                        naturaleza para resolver problemas de forma diferente, efectiva y eficaz.<br>
+                        <img src="../Resource/img/mm_2.webp" width="500" alt="alex_moran">
+                </div>
+
+                <div class="slide">
+                    <h2>Máster Internacional (Opcional)* con la European School of Leadership (EUSCHOOL) de España</h2>
+                    <p>Quienes participen en esta Doble Certificación obtendrán un Máster en Marketing Digital y
+                        Transformación Empresarial a nombre de EUSCHOOL de España.<br>
+                        *El Máster es opcional y no está incluido en la inversión de la Maestría en Marketing y Gestión
+                        Comercial.<br>
+                        <img src="../Resource/img/mm_3.webp" width="500" alt="alex_moran"><br>
+
+                </div>
+                <button class="previo-boton">
+                </button>
+                <button class="siguiente-boton"></button>
+            </div>
+            <hr>
+            <section class="malla">
+                <div class="malla-curricular">
+                    <h2>Malla Curricular</h2>
+                    <a target="_blank"
+                        href="https://www.postgradoutp.edu.pe/sites/default/files/2024-04/sumilla_maco_presencial.pdf">
+                        <img src="../Resource/Icon/flecha-correcta2.png">Sumilla</a>
+                    <div class="brouche">
+                        <a target="_blank"
+                            href="https://www.postgradoutp.edu.pe/sites/default/files/2023-11/Brochure%20MACO%20presencial_26-06.pdf">
+                            <img src="../Resource/Icon/flecha-correcta2.png">brouche</a>
+                    </div>
+                </div>
+                <img src="../Resource/logo/malla_curricular_marketing.png" class="malla-foto" alt="malla-curricular">
+            </section>
+            <hr>
+            <section class="docentes">
+                <h2>Docentes</h2>
+                <div class="docentes-contenido">
+                    <ul class="docentes-lista">
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Alessio Sibille</summary>
+                                <img src="../Resource/Docentes/d58.webp" width="300" alt="foto">
+                                <p>Máster en Administración de Empresas, U. Politécnica de Madrid (España). Máster en
+                                    Dirección de Marketing y Gestión Comercial, EOI, (España). Facilitador de la
+                                    Transformación Digital a través de Business Intelligence & Analytics, apalancado en
+                                    plataformas Cloud y Metodologías Ágiles. Es Gerente Regional de Tecnologías de la
+                                    Información en QSI. Ha sido Gerente Corporativo Tecnología de BI en Belcorp.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Carlos Dulanto</summary>
+                                <img src="../Resource/Docentes/d59.webp" width="300" alt="foto">
+                                <p>Maestría en Psicología Organizacional, USMP. Especialización en Biomimicry for
+                                    Creative Innovation, Specialist Circular Economy, University of California
+                                    (Berkley). CEO de Gen Quijote: Business, Strategy & Innovation en Perú, México y
+                                    España, Publicista y Consultor en Innovación Estratégica y Conferencista
+                                    Internacional para Roastbrief & La Cocina Mx. Ha sido Head of Planning en Ogilvy &
+                                    Mather.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Catherine Prevost</summary>
+                                <img src="../Resource/Docentes/d60.webp" width="300" alt="foto">
+                                <p>MBA, UPC, Master en Gerencia y Administración, EOI (España), Coach Ejecutivo y de
+                                    Equipos por INCAE Business School (Costa Rica). Es Gerente de División de Productos
+                                    en el BanBif.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Daniel Onchi</summary>
+                                <img src="../Resource/Docentes/d29.webp" width="300" alt="foto">
+                                <p>Magister en Supply Chain Management, ESAN. Ingeniero Zootecnista, UNALM (España).
+                                    Genética Aviar-JICA (Japón). Especialista en Operaciones y Logística Marítima-Escola
+                                    Europea Intermodal Transport (Italia). Director de la Maestría en Gerencia de
+                                    Operaciones y Logística, UTP. Asesor Gestión Empresas, Operaciones y SCM.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>David Bravo</summary>
+                                <img src="../Resource/Docentes/d30.webp" width="300" alt="foto">
+                                <p>Máster en Docencia Universitaria y Gestión Educativa, UTP. Bachiller en Ingeniería de
+                                    Sistemas y Computación, Universidad Peruana Los Andes. Técnico en Marketing,
+                                    Universidad del Pacífico. Docente en la EPGUTP y en CERTUS. Agente Inmobiliario
+                                    Registrado. Ha trabajado en Unilever como Gerente de Marca y Gerente de Ventas, en
+                                    Nabisco Perú como Gerente de Ventas Lima, en Donofrio como Gerente de Ventas Perú y
+                                    en Bella Holandesa del Perú como Gerente de Ventas Perú.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>David Franco</summary>
+                                <img src="../Resource/Docentes/d61.webp" width="300" alt="foto">
+                                <p>MBA Internacional, EPGUTP y UEMC (España). Certificado en Metodología Lego® Serious
+                                    Play®. Máster en Marketing, UPC y EOI (España). Director Académico de la Escuela de
+                                    Postgrado UTP. Ha sido Jefe de Marketing en Real Club de Lima, Jefe de Producto en
+                                    Banco Cencosud, Jefe Académico en EPG UTP y Jefe de Marketing en Grupo Deltron.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Federico Vargas</summary>
+                                <img src="../Resource/Docentes/d35.webp" width="300" alt="foto">
+                                <p>Maestro en Banca de Finanzas, IEB en la U. Complutense de Madrid (España)
+                                    .Certificado en Scrum Master (SMC™). Es CEO-Director en el Grupo Empresarial 360,
+                                    Centro América y el Caribe y Director of the Board Global Accreditation Center,
+                                    PMI®. Empresario y Gerente de Negocios con más de 19 años de experiencia Gerenciando
+                                    Organizaciones y Proyectos en todo tipo de industrias, tales como Ingeniería,
+                                    Telecomunicaciones, Tecnologías de Información, Financiero, Desarrollo Social y
+                                    Consultoría.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Felipe Vanini</summary>
+                                <img src="../Resource/Docentes/d37.webp" width="300" alt="foto">
+                                <p>Magister Administración, ESAN. PDD, PAD. Ingeniero Industrial, UNT. Gerente General
+                                    ARAMEUS consultora estratégica en crecimiento. Fue Gerente General Deprodeca
+                                    (Gloria), Corp. Custer (Consumo Masivo) y Layconsa. Gerente Unidad Negocio/Marketing
+                                    Supermercados Peruanos, Axur, TQC y otros.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Herbert Bravo</summary>
+                                <img src="../Resource/Docentes/d62.webp" width="300" alt="foto">
+                                <p>Magister en Marketing de Servicios, USMP. Consultor en marketing, estrategia de
+                                    comunicación e imagen corporativa e institucional, Gestor y analista temático de
+                                    proyectos campañas de RSC y BTL en instituciones públicas y privadas.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Janice Ortiz</summary>
+                                <img src="../Resource/Docentes/d63.webp" width="300" alt="foto">
+                                <p>no info.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Javier Benitez</summary>
+                                <img src="../Resource/Docentes/d64.webp" width="300" alt="foto">
+                                <p>MBA, IE (España). Licenciado en CCEE y EE. Licenciado en Derecho. Coach y Autor de 4
+                                    libros. Director de BNI. CEO Se Feliz Coaching. Socio Director Gamelearn. Director
+                                    Embajadores de la Felicidad. Docente de habilidades directivas.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Javier Sosa</summary>
+                                <img src="../Resource/Docentes/d65.webp" width="300" alt="foto">
+                                <p>MBA, PAD. Ejecutivo senior con experiencia en dirección comercial e investigación de
+                                    mercados. Conocimiento del canal tradicional y moderno. Actualmente es Gerente
+                                    Comercial de Zoomin Group Peru y anteriormente en cargos similares en empresas de
+                                    investigación y retail.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>José Campos</summary>
+                                <img src="../Resource/Docentes/d44.webp" width="300" alt="foto">
+                                <p>Máster, IESE (ESPAÑA). PAD Ingeniero Industrial colegiado U. Lima. Docente
+                                    investigador EPGUTP. Gerente General VILLADEDOOD. Gerente Banca Empresa y
+                                    Corporativa BBVA.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>José Carlos Yamagoshi</summary>
+                                <img src="../Resource/Docentes/d66.webp" width="300" alt="foto">
+                                <p>Doctorando en Educación, MBA PAD, Máster Digital Business Management, UB (España).
+                                    Educador, Experto en la gestión estratégica de modelos de negocios centrados en la
+                                    persona, CX, UX y CRM. Socio de Interaction, presidente de la Asociación Peruana de
+                                    CRM.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>José Lecaros</summary>
+                                <img src="../Resource/Docentes/d45.webp" width="300" alt="foto">
+                                <p>MBA, UTP. Administrador de Empresas, PUJC (Colombia). Gerente General y Dueño JELL
+                                    STRATEGIC ALIGNMENT. Coordinador de Negocios para América Latina ZAMBON Colombia.
+                                    Miembro del American Marketing Association (AMA - USA)</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Julian Laski</summary>
+                                <img src="../Resource/Docentes/d67.webp" width="300" alt="foto">
+                                <p>Ph D en Business Administration, ULB (Bélgica). Contador Público, UBA (Argentina).
+                                    Estudios de maestría en gestión pública, UOC (España). Es consultor de organismos
+                                    internacionales desde hace más de 20 años. Es profesor de programas de maestría y
+                                    doctorado en varias universidades de América Latina.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Liliana Alvarado</summary>
+                                <img src="../Resource/Docentes/d68.webp" width="300" alt="foto">
+                                <p>Doctora en Administración y Dirección de Empresas, U. Politécnica de Cataluña. MBA,
+                                    Esan. Actualmente es Vicerrectora Académica de la UTP, Directora General de la
+                                    Escuela de Postgrado de la UTP, Autora del libro "Brainketing", Presidenta del
+                                    Instituto de Transformación Digital CC-UNI y Local Chair de la Neuromarketing
+                                    Science & Business Association.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Luis Enrique Zevallos</summary>
+                                <img src="../Resource/Docentes/d69.webp" width="300" alt="foto">
+                                <p>MBA, UTP. Licenciado en Ciencias Militares con mención en Ingeniería Mecánica,
+                                    Administrador de Empresas, Gerente General de Business & Sales Training, Gerente
+                                    Comercial de FR MEDICAL.Docente, Consultor y Mentor.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Luis Merino</summary>
+                                <img src="../Resource/Docentes/d70.webp" width="300" alt="foto">
+                                <p>Doctorando UPC (España). MBA, ESAN. Ingeniero Metalurgista, UNSA. Director de
+                                    Selstrat, consultora de negocios. Ha sido Gerente General de Colegios Proeduca S.A.
+                                </p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Marlith Segura</summary>
+                                <img src="../Resource/Docentes/d71.webp" width="300" alt="foto">
+                                <p>Magíster en Gestión, Acreditación y Autoevaluación Educativa, USMP. Es subdirector de
+                                    Calidad Educativa en la ENSABAP. Ha sido coordinador de formación docente en la UPCH
+                                    para programas de UNESCO y MINEDU</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Martin Maltese</summary>
+                                <img src="../Resource/Docentes/d72.webp" width="300" alt="foto">
+                                <p>MBA en Estrategias, CENTRUM PUCP, consultor y líder comercial con más de 25 años de
+                                    experiencia en el desarrollo de nuevos negocios y diseño e implementación de
+                                    estrategias comerciales en empresas nacionales y trasnacionales. Docente y mentor en
+                                    Escuelas de Negocios e Incubadoras.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Michael Lázaro</summary>
+                                <img src="../Resource/Docentes/d73.webp" width="300" alt="foto">
+                                <p>Magíster en Gestión de la Innovación, U. Cayetano Heredia. Jefe de Gestión de
+                                    Operación de Cadenas en Claro Perú. Mentor en Estrategia e Innovación de Negocios
+                                    para Emprendedores y Empresarios. Ha sido Product Owner de Estrategia de Canales
+                                    Digitales en Interbank.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Nancy Escribens</summary>
+                                <img src="../Resource/Docentes/d74.webp" width="300" alt="foto">
+                                <p>Egresada del Doctorado en Administración de Negocios Globales, URP, Licenciada en
+                                    Administración de Empresas, U. Lima. Maestra en Marketing y Gestión Comercial, UTP,
+                                    Master Facilitator por la International Facility Community (IFC). Gerente Comercial
+                                    de Alfosac. Country Manager de Retail Marketing Perú. Ha sido Directora Comercial de
+                                    Transel Operador Logístico.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Oscar Carbajal</summary>
+                                <img src="../Resource/Docentes/d44.webp" width="300" alt="foto">
+                                <p>Master en Gestión de Empresas de Comunicación, Universidad de Navarra (España). MBA,
+                                    UPC. CEO de Compulso. Ha sido Gerente Nacional de Ventas en el Grupo El Comercio. Ha
+                                    sido Comercial Partnerships Director en FOX Latin American Channels.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Pedro Kanashiro</summary>
+                                <img src="../Resource/Docentes/d54.webp" width="300" alt="foto">
+                                <p>Magister en Docencia Universitaria y Gestión Educativa, UTP. Especializado en el
+                                    diseño y ejecución de cursos relacionados a habilidades blandas. Actualmente es
+                                    Director de Cuatro & Compañía, empresa dedicada a la transformación de personas a
+                                    través de actividades artísticas y lúdicas</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Pilar Tabja</summary>
+                                <img src="../Resource/Docentes/d54.webp" width="300" alt="foto">
+                                <p>no info.</p>
+                            </details>
+                        </li>
+                        <li class="docentes-items">
+                            <details>
+                                <summary>Sergio Madero</summary>
+                                <img src="../Resource/Docentes/d54.webp" width="300" alt="foto">
+                                <p>no info.</p>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+                <div class="conocer">
+                    <a href="https://www.postgradoutp.edu.pe/docentes"><img src="../Resource/Icon/flecha-correcta2.png"
+                            <h3>Conoce a
+                        nuestros docentes</h3></a>
+                </div>
+            </section>
+            <div class="final">
+                <h2>Admision</h2>
+                <div class="admision">
+                    <ul class="final-p">
+                        <li>Grado Académico de Bachiller (Registrado en SUNEDU)</li>
+                        <li>Experiencia Laboral relevante, mínimo 2 años.</li>
+                        <li>Evaluación de las Aptitudes de los Postulantes mediante.</li>
+                        <li>Entrevista Personal.</li>
+                        <li>Evaluación de Conocimientos</li>
+                        <li>Carta de Presentación explicando la Motivación de Estudio en el Programa.</li>
+                    </ul>
+                    <div class="imagen-final">
+                        <img src="../Resource/img/conectate.png"><br>
+
+                    </div>
+                </div>
+                <div class="botones-final">
+                    <div class="proceso-admision">
+                        <a target="_blank" href="">
+                            <img src="../Resource/Icon/flecha-correcta2.png">Proceso de admision</a>
+                        <div class="proceso-discapacidad">
+                            <a target="_blank" href="">
+                                <img src="../Resource/Icon/flecha-correcta2.png">Proceso de admision para personas con
+                                discapacidad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <section class="footer__section">
+            <article class="footer__article">
+                <h6>Síguenos en Redes Sociales</h6>
+                <nav class="footer-redes">
+                    <ul class="redes-1">
+                        <li>
+                            <a href="#"><img src="../Resource/Icon/instagram.png" alt="Instagram"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Resource/Icon/facebook.png" alt="Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Resource/Icon/youtube.png" alt="Youtube"></a>
+                        </li>
+                    </ul>
+                    <ul class="redes-2">
+                        <li>
+                            <a href="#"><img src="../Resource/Icon/tiktok.png" alt="TikTok"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Resource/Icon/spotify.png" alt="Spotify"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Resource/Icon/linkedin.png" alt="LinkedIN"></a>
+                        </li>
+                    </ul>
+                    <a href="#"><img src="../Resource/logo/libro-reclamaciones.png" alt="Libro de reclamaciones"
+                            class="enlace__libro"></a>
+                </nav>
+            </article>
+            <article class="footer__article">
+                <h6>Atención a Estudiantes</h6>
+                <div class="footer__box">
+                    <ul>
+                        <li>
+                            <img src="../Resource/Icon/Telefono.png" alt="Telefono">
+                            <p>994 693 949</p>
+                        </li>
+                        <li>
+                            <img src="../Resource/Icon/correo-electronico.png" alt="Correo">
+                            <a href="mailto:saepg@utp.edu.pe">saepg@utp.edu.pe</a>
+                        </li>
+                        <li>
+                            <img src="../Resource/Icon/calendario.png" alt="Calendario">
+                            <strong>Atención Telefónica</strong>
+                            <ul>
+                                <li>Lun - Vie: 8:30 am - 6:00 pm</li>
+                                <li>Sábados: 8:00 am - 1:00 pm</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="../Resource/Icon/calendario.png" alt="Calendario">
+                            <strong>Atención Presencial</strong>
+                            <ul>
+                                <li>
+                                    <img src="../Resource/Icon/ubicacion.png" alt="Ubicación">
+                                    <p>Av. Salaverry 2443, San Isidro</p>
+                                </li>
+                                <li>Lun - Vie: 8:30 am - 9:00 pm</li>
+                                <li>Sábados: 8:30 am - 8:00 pm</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="footer__article">
+                <h6>Atención a Postulantes</h6>
+                <div class="footer-box">
+                    <ul>
+                        <li>
+                            <img src="../Resource/Icon/whatsapp.png" alt="WhatsApp">
+                            <p>WhatsApp: <a target="_blank" href="https://wa.link/n2fc70">+51905448000</a></p>
+                        </li>
+                        <li>
+                            <img src="../Resource/Icon/calendario.png" alt="Calendario">
+                            <a href="mailto:comunicacionesEPG@utp.edu.pe">comunicacionesEPG@utp.edu.pe</a>
+                        </li>
+                        <li>
+                            <img src="../Resource/Icon/ubicacion.png" alt="Ubicación">
+                            <p>Av. Salaverry 2443, San Isidro</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="footer__article">
+                <h6>Enlaces Importantes</h6>
+                <div class="footer-box">
+                    <ul>
+                        <li><a href="https://www.utp.edu.pe/transparencia">Portal de Transparencia</a></li>
+                        <li><a href="#Politicas">Privacidad y Seguridad</a></li>
+                        <li><a href="#Terminos y condiciones">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h6 style="margin-top: 15px;">¿DUDAS?</h6>
+                    <li style="list-style: none;"><a style="font-size: 20px; text-decoration: none;"
+                            href="../HTML/Home/preguntas.html">Preguntas Frecuentes</a></li>
+                </div>
+            </article>
+            <nav class="footer__razon">
+                <p>Razón Social: UTP S.A.C - RUC: 20462509236</p>
+            </nav>
+        </section>
+        <section class="footer__section">
+            <p>&copy;2023 © UTP Postgrado. Todos los derechos reservados.</p>
+        </section>
+    </footer>
+    <script src="../JavaScript/menu.js"></script>
+    <script src="../JavaScript/gestion-construccion.js"></script>
+</body>
+
+</html>

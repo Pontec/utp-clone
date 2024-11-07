@@ -1,0 +1,50 @@
+/*! Banner */
+.banner .banner__title1{
+    color: #BC805C;
+}
+
+/*!  Formatos*/
+
+.modalidad-classes li:hover{
+    background-color: #BC805C !important;
+}
+
+.modalidad-classes .item.selected {
+    background-color: #BC805C !important;
+    border: solid 3px #BC805C !important;
+}
+
+/*! Siempre Conectados */
+.conectados__content--two .comp_btn{
+    margin-top: 3.5rem;
+}
+
+/*! Transformación Personal*/
+
+/*! Programas Internacionales */
+.contenedor__programa{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contenedor__programa div h2{
+    font-size: 1.75rem;
+    line-height: 1.25;
+    color: #4d4d4d;
+}
+
+.contenedor__programa div h3{
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin-top: 1rem;
+    color: #4d4d4d;
+    font-weight: bold;
+}
+
+.contenedor__programa div p{
+    color: #4d4d4d;
+    margin-top: 15px
+}

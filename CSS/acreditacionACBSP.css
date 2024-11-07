@@ -1,0 +1,136 @@
+main section{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #9494948f;
+}
+
+a{
+    text-decoration: none;
+}
+
+.juntos{
+    display: flex;
+    gap: 20px;
+}
+
+.juntos .juntos__content{
+    width: 100%;
+}
+
+.juntos .juntos__content .juntos__title{
+    width: 550px;
+    height: 160px;
+    padding: 48px 0 32px 0;
+}
+
+.juntos .juntos__content h2{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.juntos .juntos__content img{
+    width: 550px;
+}
+
+
+.acreditacion{
+    display: flex;
+    gap: 25px;
+}
+
+.acreditacion .acreditacion__content{
+    width: 100%;
+}
+
+.acreditacion h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.acreditacion p{
+    line-height: 1.5;
+    font-size: 1.125em;
+}
+
+
+.estanderes{
+    display: flex;
+    gap: 30px;
+}
+
+.estanderes .estanderes__content{
+    width: 100%;
+}
+
+.estanderes h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.estanderes div > p{
+    line-height: 1.5;
+    font-size: 1.125em;
+}
+
+.estanderes .estanderes__content details{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1.5px solid #a8a8a88f;
+}
+
+.estanderes .estanderes__content summary{
+    font-size: 18px;
+}
+
+.estanderes .estanderes__content details > p{
+    margin: 10px 0 15px 0;
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+/*Pendiente*/
+.beneficios h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.beneficios ul li{
+    width: 250px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.beneficios ul li img{
+    width: 50px;
+}
+
+
+.contribuyente .contribuyente__content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contribuyente .contribuyente__cabecera{
+    margin-bottom: 3rem;
+}
+
+.contribuyente .contribuyente__content h2{
+    width: 900px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.contribuyente .contribuyente__content p{
+    line-height: 1.5;
+    font-size: 1.125em;
+    margin: 20px 0;
+}

@@ -1,0 +1,127 @@
+main section{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #9494948f;
+}
+
+h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.graduados{
+    display: flex;
+}
+
+.graduados h2{
+    font-size: 45px;
+}
+
+h2,
+h3{
+    font-weight: bold;
+}
+
+.graduados img{
+    width: 700px;
+}
+
+.interes .interes__content{
+    display: flex;
+    gap: 25px;
+}
+
+.interes .interes__content h3{
+    margin: 15px 0;
+    font-size: 40px;
+}
+
+.interes .interes__content p{
+    font-size: 1.25em;
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+
+.intercorp__content{
+    display: flex;
+    color: #019bdd;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.intercorp__content div{
+    border-right: 1px solid #9494948f;
+    padding-right: 55px;
+    margin: 25px auto;
+}
+
+.intercorp__content .intercorp__logo p{
+    font-size: 1.75em;
+}
+
+.intercorp__content .intercorp__logo img{
+    width: 150px;
+}
+
+.intercorp__content .intercorp__somos p{
+    font-size: 5em;
+
+}
+
+.intercorp__content .intercorp__pasion p{
+    font-size: 2.25em;
+    line-height: 2.5;
+    text-align: left;
+}
+
+.programas h2{
+    font-size: 2.5em;
+    line-height: 1.125;
+}
+
+.programas .programas__diferencian{
+    width: 300px;
+    margin-bottom: 3rem;
+}
+
+.programas__content{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.programas .programas__content span{
+    font-size: 1.7em;
+    display: block;
+    font-weight: bold;
+}
+
+.programas .programas__content h3{
+    margin-top: 20px;
+    font-size: 1.3em;
+    line-height: 1.125;
+}
+
+.acreditacion{
+    display: flex;
+    gap: 20px;
+}
+
+.acreditacion h2{
+    font-size: 2.5em;
+    margin-bottom: 1.75rem;
+    width: 100%;
+}
+
+.acreditacion p{
+    line-height: 1.5;
+    font-size: 1.125em;
+    font-weight: 100;
+}

@@ -1,0 +1,15 @@
+/*!Banner */
+.banner .banner__title1 {
+    color: #00508C;
+}
+
+/*!  Formatos*/
+
+.modalidad-classes li:hover{
+    background-color: #00508C !important;
+}
+
+.modalidad-classes .item.selected {
+    background-color: #00508C !important;
+    border: solid 3px #00508C !important;
+}
